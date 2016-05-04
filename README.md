@@ -10,12 +10,12 @@ This script will send the help files of a random cmdlet to your Inbox every day.
 3. Start adding the list of Modules you'd like to pull commands from on line 3 and down inside the "Modules" array.
 4. Once complete, save and run the script. It will generate a txt file named "Commands_Random" in the same directory as the script file based on the modules specified.
 
-## Configure the Primary Script
+### Configure the Primary Script
 1. Open "Cmdlet a day.ps1" in a text editor or the ISE.
 2. Edit lines 2-4 with your applicable information
 3. Save and exit the file
 
-## Configure the Scheduled Task
+### Configure the Scheduled Task
 1. Open Task Scheudler on your PC and create a new task.
 2. Name the task. (For example: Send Cmdlet a Day Email)
 3. Give an optional discription
