@@ -9,7 +9,6 @@ This script will send the help files of a random cmdlet to your Inbox every day.
 2. Open the "Generate Random List of Commands.ps1" script file in a text editor or the ISE. 
 3. Start adding the list of Modules you'd like to pull commands from on line 3 and down inside the "Modules" array.
 4. Once complete, save and run the script. It will generate a txt file named "Commands_Random" in the same directory as the script file based on the modules specified.
-5. Finally, open the newly created text file and add a new line at the top of the file with the word "START".
 
 ### Configure the Primary Script
 1. Open "Cmdlet a day.ps1" in a text editor or the ISE.
@@ -30,3 +29,4 @@ This script will send the help files of a random cmdlet to your Inbox every day.
 
 ## Things to Note
 * This script is currently configured to use an unauthenticated SMTP relay server. It can easily be changed to work with one that requires authentication or to use a service like Gmail.
+* Don't modify Last_Command.txt. This is a psuedo variable that the script uses between calls.
