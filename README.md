@@ -24,7 +24,7 @@ This script will send the help files of a random cmdlet to your Inbox every day.
 6. Add a daily trigger or a trigger of your choice
 7. Add an action of the type "Run a Program".
 8. In the "Program/script" box enter "Powershell.exe"
-9. In the "Add arguments" box enter "-File "C:\Users\[USERNAME]\\Powershell\Cmdlet a Day\Cmdlet a Day.ps1". Be sure to fill in the applicable path
+9. In the "Add arguments" box enter "-File "C:\Users\[USERNAME]\\Powershell\Cmdlet a Day\Cmdlet a Day.ps1" ". Be sure to fill in the applicable path
 10. Test the setup by running the task manually
 
 ## Things to Note
