@@ -33,7 +33,7 @@ $help = Get-Help $Current_Command | Out-String
 #Email Message
     
     #Email From
-    $From = "Learn a Cmdlet Every Day <CmdletADay@chicos.com>"
+    $From = "Learn a Cmdlet Every Day <CmdletADay@contoso.com>"
 
     #Email Subject
     $Subject = "$Current_Command"
