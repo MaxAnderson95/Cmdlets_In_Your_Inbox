@@ -5,7 +5,7 @@ This script will send the help files of a random cmdlet to your Inbox every day.
 1. Download and place the "Cmdlet a Day" folder somewhere on your machine.
 
 ### Generate a Random List of Commands
-1. First you're going to begin by creating the list of commands that the script will run though daily. This can be done manually or by using the "Generate Random List of Commands.ps1" script.
+1. First you're going to begin by creating the list of commands that the script will run though daily. This can be done manually or by using the "Generate Random List of Commands.ps1" script. *Note if you do this manually, the first line must say "START". See the output of the generator as an example.
 2. Open the "Generate Random List of Commands.ps1" script file in a text editor or the ISE. 
 3. Start adding the list of Modules you'd like to pull commands from on line 3 and down inside the "Modules" array.
 4. Once complete, save and run the script. It will generate a txt file named "Commands_Random" in the same directory as the script file based on the modules specified.
