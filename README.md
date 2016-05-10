@@ -29,4 +29,3 @@ This script will send the help files of a random cmdlet to your Inbox every day.
 
 ## Things to Note
 * This script is currently configured to use an unauthenticated SMTP relay server. It can easily be changed to work with one that requires authentication or to use a service like Gmail.
-* Don't modify Last_Command.txt. This is a psuedo variable that the script uses between calls.
