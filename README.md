@@ -9,7 +9,7 @@ This script will send the help files of a random cmdlet to your Inbox every day.
 2. Open the "Generate Random List of Commands.ps1" script file in a text editor or the ISE. 
 3. Start adding the list of Modules you'd like to pull commands from on line 3 and down inside the "Modules" array.
 4. Once complete, save and run the script. It will generate a txt file named "Commands_Random" in the same directory as the script file based on the modules specified.
-5. Optionally, you can specify -Offline when running the script via a powershell or CMD prompt. This will also download the help files for the selected modules into a file in the same directory named "Offline_Help_Files". The "Cmdlet a day.ps1" script will look for this folder and if it exists, will use it to pull the help files.
+5. Optionally, you can specify "-Offline" when running the script via a powershell or CMD prompt. This will also download the help files for the selected modules into a folder in the same directory named "Offline_Help_Files". The "Cmdlet a day.ps1" script will look for this folder and if it exists, will use it to pull the help files.
 
 ### Configure the Primary Script
 1. Open "Cmdlet a day.ps1" in a text editor or the ISE.
