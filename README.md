@@ -5,10 +5,11 @@ This script will send the help files of a random cmdlet to your Inbox every day.
 1. Download and place the "Cmdlet a Day" folder somewhere on your machine.
 
 ### Generate a Random List of Commands
-1. First you're going to begin by creating the list of commands that the script will run though daily. This can be done manually or by using the "Generate Random List of Commands.ps1" script. *Note if you do this manually, the first line must say "START". See the output of the generator as an example.
+1. First you're going to begin by creating the list of commands that the script will run though daily. This can be done manually or by using the "Generate Random List of Commands.ps1" script. It's highly suggested to use the generator script for this. *Note if you do this manually, the first line must say "START". See the output of the generator as an example.
 2. Open the "Generate Random List of Commands.ps1" script file in a text editor or the ISE. 
 3. Start adding the list of Modules you'd like to pull commands from on line 3 and down inside the "Modules" array.
 4. Once complete, save and run the script. It will generate a txt file named "Commands_Random" in the same directory as the script file based on the modules specified.
+5. Optionally, you can specify -Offline when running the script via a powershell or CMD prompt. This will also download the help files for the selected modules into a file in the same directory named "Offline_Help_Files". The "Cmdlet a day.ps1" script will look for this folder and if it exists, will use it to pull the help files.
 
 ### Configure the Primary Script
 1. Open "Cmdlet a day.ps1" in a text editor or the ISE.
@@ -29,3 +30,4 @@ This script will send the help files of a random cmdlet to your Inbox every day.
 
 ## Things to Note
 * This script is currently configured to use an unauthenticated SMTP relay server. It can easily be changed to work with one that requires authentication or to use a service like Gmail.
+* Use the offline option for generating the commands if you'd like to run the task on a dedicated server that might not necesarily have all of the modules installed that you'd like to be included.
