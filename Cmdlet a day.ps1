@@ -28,7 +28,11 @@ $x = [Array]::IndexOf($Commands,$LastCommand)
 $Current_Command = $Commands[$x+1]
 
 #Get the Help Data
-$help = Get-Help $Current_Command | Out-String
+If (Test-Path $Path_To_Files\Offline_Help_Files) {
+    $help = Get-Help $Current_Command -Path $Path_To_Files\Offline_Help_Files | Out-String
+}Else { $help = Get-Help $Current_Command | Out-String }
+
+
 
 #Email Message
     
