@@ -12,7 +12,7 @@ If ((Get-Date).DayOfWeek -eq "Saturday" -or (Get-Date).DayOfWeek -eq "Sunday") {
 #Gets a list of all commands in a random order that was already generated earlier and places them in an array
 $Commands = Get-Content "$Path_To_Files\Commands_Random.txt"
 
-#Creates a registry key to hold the last run command. If it does not already exist, it creates it and fills it with "START"
+#Checks to see if reg key to hold last command ran exists. If it does not already exist, it creates it and fills it with "START"
 If (-not (Test-Path "HKLM:\SOFTWARE\Cmdlet a Day")) {
     New-Item -Path "HKLM:\Software\Cmdlet a Day"
     New-ItemProperty -Path "HKLM:\Software\Cmdlet a Day" -Name "LastCommand" -Value "START"
@@ -37,7 +37,7 @@ If (Test-Path $Path_To_Files\Offline_Help_Files) {
 #Email Message
     
     #Email From
-    $From = "Learn a Cmdlet Every Day <CmdletADay@chicos.com>"
+    $From = "Learn a Cmdlet Every Day <CmdletADay@contoso.com>"
 
     #Email Subject
     $Subject = "$Current_Command"
